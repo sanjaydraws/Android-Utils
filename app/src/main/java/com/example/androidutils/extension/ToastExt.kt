@@ -13,7 +13,7 @@ import androidx.annotation.StringRes
  */
 
 /**
-* short toast 
+* short toast
 * */
 fun Context.toast(content: String, duration: Int = Toast.LENGTH_SHORT) {
     Toast.makeText(this, content, duration).apply {
