@@ -1,12 +1,9 @@
 package com.example.androidutils.extension
 
 
-
-
-
-
 /**
- *  return list of string that contains string
+ * @param  chars to search string
+ *  @return list of string that contains string
  * */
 fun List<String>?.filterContains(chars :String, ignoreCase:Boolean = false):List<String>?{
     return try{

@@ -6,16 +6,15 @@ import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
 
 
-// use kotlin kapt plugin to apply data binding
+/* use kotlin kapt plugin to apply data binding*/
+/**
+ * @param imageUrl pass image url
+ * */
+
 @BindingAdapter("loadImage")
-fun ImageView.loadImage(image: Any?){
-    image?.let {
-        Glide.with(this).load(image).centerCrop().into(this)
+fun ImageView.loadImage(imageUrl: Any?){
+    imageUrl?.let {
+        Glide.with(this).load(imageUrl).centerCrop().into(this)
     }
 }
 
-
-private fun isWithinWeek(millis: Long): Boolean {
-    return System.currentTimeMillis() - millis <= DateUtils.WEEK_IN_MILLIS -
-            DateUtils.DAY_IN_MILLIS
-}
