@@ -16,3 +16,6 @@ fun String?.safeSubstring(startIndex: Int, endIndex: Int): String?{
     }
 }
 
+fun String?.safetToInt(): Int {
+    return this?.toIntOrNull() ?: -1
+}

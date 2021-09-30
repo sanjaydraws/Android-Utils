@@ -1,7 +1,6 @@
 package com.example.androidutils.extension
 
-
-
+import java.util.concurrent.TimeUnit
 
 /**
  * ```
@@ -13,9 +12,8 @@ package com.example.androidutils.extension
  */
 
 
-fun String?.safetToInt(): Int {
-    return this?.toIntOrNull() ?: -1
-}
 
+val Int?.secondsToMillis get() = this?.toLong()?.let { TimeUnit.SECONDS.toMillis(it) }
+val Int?.millisToSeconds get() = this?.toLong()?.let { TimeUnit.MILLISECONDS.toSeconds(it) }
 
 

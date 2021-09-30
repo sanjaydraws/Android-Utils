@@ -3,10 +3,7 @@ package com.example.androidutils
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.androidutils.extension.longToast
-import com.example.androidutils.extension.safetToInt
-import com.example.androidutils.extension.setImageResourceExt
-import com.example.androidutils.extension.toast
+import com.example.androidutils.extension.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -16,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
 
         longToast("Hello World")
+
 
     }
 }
